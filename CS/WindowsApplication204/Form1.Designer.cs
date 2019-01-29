@@ -31,7 +31,6 @@ namespace WindowsApplication204
             this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet = new WindowsApplication204.nwindDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSupplierID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCompanyName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -45,10 +44,8 @@ namespace WindowsApplication204
             this.colPhone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFax = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHomePage = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.suppliersTableAdapter = new WindowsApplication204.nwindDataSetTableAdapters.SuppliersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +55,6 @@ namespace WindowsApplication204
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.EmbeddedNavigator.CustomButtons.AddRange(new DevExpress.XtraEditors.NavigatorCustomButton[] {
             new DevExpress.XtraEditors.NavigatorCustomButton(11, "Edit in popup")});
-            this.gridControl1.EmbeddedNavigator.Name = "";
             this.gridControl1.EmbeddedNavigator.ButtonClick += new DevExpress.XtraEditors.NavigatorButtonClickEventHandler(this.gridControl1_EmbeddedNavigator_ButtonClick);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
@@ -72,12 +68,6 @@ namespace WindowsApplication204
             // suppliersBindingSource
             // 
             this.suppliersBindingSource.DataMember = "Suppliers";
-            this.suppliersBindingSource.DataSource = this.nwindDataSet;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
@@ -176,10 +166,6 @@ namespace WindowsApplication204
             this.colHomePage.FieldName = "HomePage";
             this.colHomePage.Name = "colHomePage";
             // 
-            // suppliersTableAdapter
-            // 
-            this.suppliersTableAdapter.ClearBeforeFill = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,7 +177,6 @@ namespace WindowsApplication204
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -201,9 +186,7 @@ namespace WindowsApplication204
 
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private nwindDataSet nwindDataSet;
         private System.Windows.Forms.BindingSource suppliersBindingSource;
-        private WindowsApplication204.nwindDataSetTableAdapters.SuppliersTableAdapter suppliersTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colSupplierID;
         private DevExpress.XtraGrid.Columns.GridColumn colCompanyName;
         private DevExpress.XtraGrid.Columns.GridColumn colContactName;

@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace WindowsApplication204
+﻿Namespace WindowsApplication204
 	Partial Public Class Form2
 		''' <summary>
 		''' Required designer variable.
@@ -28,7 +26,6 @@ Namespace WindowsApplication204
 			Me.components = New System.ComponentModel.Container()
 			Me.dataLayoutControl1 = New DevExpress.XtraDataLayout.DataLayoutControl()
 			Me.layoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
-			Me.nwindDataSet = New WindowsApplication204.nwindDataSet()
 			Me.suppliersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
 			Me.SupplierIDSpinEdit = New DevExpress.XtraEditors.SpinEdit()
 			Me.ItemForSupplierID = New DevExpress.XtraLayout.LayoutControlItem()
@@ -61,7 +58,6 @@ Namespace WindowsApplication204
 			CType(Me.dataLayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.dataLayoutControl1.SuspendLayout()
 			CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.suppliersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.SupplierIDSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.ItemForSupplierID, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,11 +122,6 @@ Namespace WindowsApplication204
 			Me.layoutControlGroup1.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
 			Me.layoutControlGroup1.Text = "Root"
 			Me.layoutControlGroup1.TextVisible = False
-			' 
-			' nwindDataSet
-			' 
-			Me.nwindDataSet.DataSetName = "nwindDataSet"
-			Me.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 			' 
 			' SupplierIDSpinEdit
 			' 
@@ -425,7 +416,6 @@ Namespace WindowsApplication204
 			CType(Me.dataLayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.dataLayoutControl1.ResumeLayout(False)
 			CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me.suppliersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me.SupplierIDSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me.ItemForSupplierID, System.ComponentModel.ISupportInitialize).EndInit()
@@ -461,7 +451,7 @@ Namespace WindowsApplication204
 		#End Region
 
 		Private dataLayoutControl1 As DevExpress.XtraDataLayout.DataLayoutControl
-		Private nwindDataSet As nwindDataSet
+		'private nwindDataSet nwindDataSet;
 		Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
 		Private suppliersBindingSource As System.Windows.Forms.BindingSource
 		Private SupplierIDSpinEdit As DevExpress.XtraEditors.SpinEdit

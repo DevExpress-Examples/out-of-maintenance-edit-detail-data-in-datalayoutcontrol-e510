@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace WindowsApplication204
+﻿Namespace WindowsApplication204
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -28,7 +26,6 @@ Namespace WindowsApplication204
 			Me.components = New System.ComponentModel.Container()
 			Me.gridControl1 = New DevExpress.XtraGrid.GridControl()
 			Me.suppliersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.nwindDataSet = New WindowsApplication204.nwindDataSet()
 			Me.gridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
 			Me.colSupplierID = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colCompanyName = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -42,10 +39,8 @@ Namespace WindowsApplication204
 			Me.colPhone = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colFax = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colHomePage = New DevExpress.XtraGrid.Columns.GridColumn()
-			Me.suppliersTableAdapter = New WindowsApplication204.nwindDataSetTableAdapters.SuppliersTableAdapter()
 			CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.suppliersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
@@ -54,8 +49,8 @@ Namespace WindowsApplication204
 			Me.gridControl1.DataSource = Me.suppliersBindingSource
 			Me.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill
 			Me.gridControl1.EmbeddedNavigator.CustomButtons.AddRange(New DevExpress.XtraEditors.NavigatorCustomButton() { New DevExpress.XtraEditors.NavigatorCustomButton(11, "Edit in popup")})
-			Me.gridControl1.EmbeddedNavigator.Name = ""
-'			Me.gridControl1.EmbeddedNavigator.ButtonClick += New DevExpress.XtraEditors.NavigatorButtonClickEventHandler(Me.gridControl1_EmbeddedNavigator_ButtonClick);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.gridControl1.EmbeddedNavigator.ButtonClick += new DevExpress.XtraEditors.NavigatorButtonClickEventHandler(this.gridControl1_EmbeddedNavigator_ButtonClick);
 			Me.gridControl1.Location = New System.Drawing.Point(0, 0)
 			Me.gridControl1.MainView = Me.gridView1
 			Me.gridControl1.Name = "gridControl1"
@@ -67,12 +62,6 @@ Namespace WindowsApplication204
 			' suppliersBindingSource
 			' 
 			Me.suppliersBindingSource.DataMember = "Suppliers"
-			Me.suppliersBindingSource.DataSource = Me.nwindDataSet
-			' 
-			' nwindDataSet
-			' 
-			Me.nwindDataSet.DataSetName = "nwindDataSet"
-			Me.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
 			' 
 			' gridView1
 			' 
@@ -159,10 +148,6 @@ Namespace WindowsApplication204
 			Me.colHomePage.FieldName = "HomePage"
 			Me.colHomePage.Name = "colHomePage"
 			' 
-			' suppliersTableAdapter
-			' 
-			Me.suppliersTableAdapter.ClearBeforeFill = True
-			' 
 			' Form1
 			' 
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
@@ -171,10 +156,10 @@ Namespace WindowsApplication204
 			Me.Controls.Add(Me.gridControl1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'			Me.Load += New System.EventHandler(Me.Form1_Load);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
 			CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me.suppliersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
 			CType(Me.gridView1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
@@ -184,9 +169,7 @@ Namespace WindowsApplication204
 
 		Private WithEvents gridControl1 As DevExpress.XtraGrid.GridControl
 		Private gridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-		Private nwindDataSet As nwindDataSet
 		Private suppliersBindingSource As System.Windows.Forms.BindingSource
-		Private suppliersTableAdapter As WindowsApplication204.nwindDataSetTableAdapters.SuppliersTableAdapter
 		Private colSupplierID As DevExpress.XtraGrid.Columns.GridColumn
 		Private colCompanyName As DevExpress.XtraGrid.Columns.GridColumn
 		Private colContactName As DevExpress.XtraGrid.Columns.GridColumn

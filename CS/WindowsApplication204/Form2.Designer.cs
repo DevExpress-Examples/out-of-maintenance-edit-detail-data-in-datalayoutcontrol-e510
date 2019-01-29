@@ -31,7 +31,6 @@ namespace WindowsApplication204
             this.components = new System.ComponentModel.Container();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.nwindDataSet = new WindowsApplication204.nwindDataSet();
             this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SupplierIDSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.ItemForSupplierID = new DevExpress.XtraLayout.LayoutControlItem();
@@ -64,7 +63,6 @@ namespace WindowsApplication204
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SupplierIDSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSupplierID)).BeginInit();
@@ -144,11 +142,6 @@ namespace WindowsApplication204
             this.layoutControlGroup1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup1.Text = "Root";
             this.layoutControlGroup1.TextVisible = false;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SupplierIDSpinEdit
             // 
@@ -448,7 +441,6 @@ namespace WindowsApplication204
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SupplierIDSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForSupplierID)).EndInit();
@@ -484,7 +476,7 @@ namespace WindowsApplication204
         #endregion
 
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
-        private nwindDataSet nwindDataSet;
+        //private nwindDataSet nwindDataSet;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private System.Windows.Forms.BindingSource suppliersBindingSource;
         private DevExpress.XtraEditors.SpinEdit SupplierIDSpinEdit;
